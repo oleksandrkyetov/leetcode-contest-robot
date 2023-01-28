@@ -1,0 +1,16 @@
+{
+  "name": "leetcode-js-client",
+  "description": "Leetcode JS Client",
+  "version": "0.1.0",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "chatgpt": "^4.1.1",
+    "crypto-js": "^4.1.1",
+    "dotenv": "^16.0.3"
+  },
+  "devDependencies": {}
+}
