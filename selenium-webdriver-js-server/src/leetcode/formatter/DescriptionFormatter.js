@@ -27,6 +27,7 @@ class DescriptionFormatter {
     const codeMapper = (line) => (line.match(/<code>.+?<\/code>/g) || [])
       .reduce((accumulator, match) => accumulator.replace(match, codeMatchConverter(match)), line);
 
+    // TODO Do we need an extra empty line here? Not at this time ...
     // const newLineReducer = (accumulator, currentValue) => {
     //   if (/(Constraints|Example \d+):/g.test(currentValue)) {
     //     accumulator.push(this.new_line);

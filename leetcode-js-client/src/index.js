@@ -1,12 +1,5 @@
 require('dotenv').config();
 
-const os = require('os');
-const fs = require('fs');
-
-const cryptoJs = require('crypto-js');
-
-const secret = fs.readFileSync(`${os.homedir()}/.secret`).toString();
-
 const username = process.env.LEETCODE_USERNAME;
 const password = process.env.LEETCODE_PASSWORD;
 
@@ -15,12 +8,7 @@ const language = process.env.LEETCODE_LANGUAGE;
 
 const server = process.env.LEETCODE_SERVER;
 
-// const encrypt = cryptoJs.AES.encrypt("...", secret).toString();
-// console.log(encrypt);
-// const decrypt = cryptoJs.AES.decrypt(encrypt, secret).toString(cryptoJs.enc.Utf8);
-// console.log(decrypt);
-
-const openaiApiKey = cryptoJs.AES.decrypt(process.env.OPENAI_API_KEY, secret).toString(cryptoJs.enc.Utf8);
+const openaiApiKey = process.env.OPENAI_API_KEY;
 
 const new_line = '\n';
 

@@ -9,7 +9,6 @@
   },
   "dependencies": {
     "chatgpt": "^4.1.1",
-    "crypto-js": "^4.1.1",
     "dotenv": "^16.0.3"
   },
   "devDependencies": {}
