@@ -3,10 +3,10 @@ require('dotenv').config();
 const username = process.env.LEETCODE_USERNAME;
 const password = process.env.LEETCODE_PASSWORD;
 
-const contest = process.env.LEETCODE_CONTEST;
-const language = process.env.LEETCODE_LANGUAGE;
+const contest = process.env.LEETCODE_CONTEST || 'weekly-contest-123';
+const language = process.env.LEETCODE_LANGUAGE || 'java';
 
-const server = process.env.LEETCODE_SERVER;
+const server = process.env.LEETCODE_SERVER || 'http://localhost:3000';
 
 const openaiApiKey = process.env.OPENAI_API_KEY;
 

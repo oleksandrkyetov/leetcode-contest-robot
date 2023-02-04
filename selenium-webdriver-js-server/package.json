@@ -13,5 +13,8 @@
     "jsdom": "^21.1.0",
     "selenium-webdriver": "^4.7.1"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "engines" : {
+    "node" : ">=18.0.0"
+  }
 }

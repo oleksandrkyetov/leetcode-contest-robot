@@ -11,5 +11,8 @@
     "chatgpt": "^4.1.1",
     "dotenv": "^16.0.3"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "engines" : {
+    "node" : ">=18.0.0"
+  }
 }
