@@ -1,3 +1,5 @@
+const os = require('os');
+
 const {By, until, Key} = require('selenium-webdriver');
 
 const DescriptionFormatter = require('./formatter/DescriptionFormatter');
@@ -97,7 +99,13 @@ class Task {
       });
     }
 
-    return codeMirrorTextareaElement.sendKeys(Key.chord(Key.CONTROL, 'a'), Key.DELETE)
+    const osTypeKeys = {
+      'Linux': Key.CONTROL,
+      'Darwin': Key.COMMAND,
+      'Windows_NT': Key.CONTROL,
+    }
+
+    return codeMirrorTextareaElement.sendKeys(Key.chord(osTypeKeys[os.type()], 'a'), Key.DELETE)
       .then(() => typeLines(codeMirrorTextareaElement, lines));
   }
 
