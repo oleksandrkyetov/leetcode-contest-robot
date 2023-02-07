@@ -27,3 +27,5 @@ yarn start
 ## Disclaimer
 
 Use it at your own risk.
+
+NOTE: If you plan to use it during real LeetCode Contest, you need to register for contest beforehand.
