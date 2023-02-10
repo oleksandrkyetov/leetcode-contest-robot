@@ -1,3 +1,11 @@
+## Updates
+<details open>
+<summary><strong>2023-02-09</strong></summary>
+It looks like OpenAI restricted access to model `text-chat-davinci-002-20221122`, so it is unavailable anymore.
+
+See more details here https://www.reddit.com/r/ChatGPT/comments/10wggdf/they_killed_textchatdavinci00220221122/
+</details>
+
 ## Intro
 
 Robot which solves [LeetCode Contest](https://leetcode.com/contest/) problems using [ChatGPT](https://openai.com/blog/chatgpt) and [Selenium WebDriver](https://www.selenium.dev/documentation/webdriver/).
